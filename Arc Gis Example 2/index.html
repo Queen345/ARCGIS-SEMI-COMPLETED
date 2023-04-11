@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Directions widget | Sample | ArcGIS Maps SDK for JavaScript 4.26</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.26/"></script>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 bg-secondary vh-100">
+          <input type="text" placeholder="Enter Distance" id="Distance">
+          <button id="btn">Calculate</button>
+        </div>
+        <div class="col-6">
+          <p id="mile" class="text-light">Miles</p>
+        </div>
+        <div class="col-6">
+          <p id="price" class="text-light">Estimated Price</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="viewDiv"></div>
+    <div id="infoDiv">
+        <input
+          class="esri-component esri-widget--button esri-widget esri-interactive"
+          type="button"
+          id="switch-btn"
+          value="3D"
+        />
+      </div>
+      <div id="toolbarDiv" class="esri-component esri-widget">
+        <button id="distance" class="esri-widget--button esri-interactive esri-icon-measure-line" title="Distance Measurement Tool">
+        </button>
+        <button id="area" class="esri-widget--button esri-interactive esri-icon-measure-area" title="Area Measurement Tool">
+        </button>
+        <button id="clear" class="esri-widget--button esri-interactive esri-icon-trash" title="Clear Measurements">
+        </button>
+      </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>
+
+    <!-- <div class="container">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Distance" id="convert">
+        
+        <br><br>
+        
+        <button id="btn">Estimate Price</button><br><br>
+      </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="" id="displayEstimation">
+        </div><br>
+
+        <div class="display">
+          <p id="result">Distance</p>
+         
+        </div>
+    </div>
+
+    <button id="button"></button> -->
